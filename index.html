@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#faf7f0" />
+    <title>CallMeShazzam — The Instagram Creator Experience</title>
+    <meta name="description" content="An unofficial, Instagram-first creator website concept for CallMeShazzam — tech, humour, Reels and creator culture." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CallMeShazzam — The Instagram Creator Experience" />
+    <meta property="og:description" content="Tech energy, humour and creator culture. An unofficial Instagram-first concept site." />
+    <meta property="og:image" content="./og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"><p style="font:16px/1.5 Arial,sans-serif;padding:28px;color:#141412">Loading CallMeShazzam hub&hellip; If this message stays, the script did not run.</p></div>
+    <script>
+      window.addEventListener('error', function (e) {
+        var r = document.getElementById('root');
+        if (r && r.textContent.indexOf('Loading') === 0) {
+          r.innerHTML = '<pre style="white-space:pre-wrap;padding:28px;font:14px/1.5 monospace;color:#b00020">Error: ' +
+            String(e.message).replace(/</g, '&lt;') + '</pre>';
+        }
+      });
+    </script>
+    <noscript><p style="padding:28px;font-family:Arial">Please enable JavaScript to view this site.</p></noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
