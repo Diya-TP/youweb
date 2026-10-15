@@ -32,18 +32,19 @@ function VideoCard({ item, index, onPlay }) {
 function TopicCard({ item }) {
   return (
     <article className="card topic-card">
-      <a className="topic-visual" href={item.href} target="_blank" rel="noreferrer" aria-label={`Explore ${item.title} on Instagram`}>
+      <div className="topic-visual" aria-label={`Illustrative image for ${item.title}`}>
         <div className="thumb topic" style={{ backgroundImage: `url(${item.image})` }}>
-          <img className="topic-photo" src={item.image} alt={item.title} loading="lazy" />
+          <img className="topic-photo" src={item.image} alt="" loading="lazy" />
           <span className="tag">{item.category}</span>
-          <span className="play" aria-hidden="true">↗</span>
+          <span className="play" aria-hidden="true">✦</span>
+          <span className="illustration-label">ILLUSTRATION</span>
         </div>
-      </a>
+      </div>
       <div className="card-meta">
         <span className="category">{item.channel.includes('Life') ? 'LIFE & VIBES' : 'TECH & REELS'}</span>
         <h3>{item.title}</h3>
         <p>{item.text}</p>
-        <a className="card-link" href={item.href} target="_blank" rel="noreferrer">Explore on Instagram ↗</a>
+        <a className="card-link" href={item.href} target="_blank" rel="noreferrer">Visit official Instagram ↗</a>
       </div>
     </article>
   )
@@ -80,7 +81,7 @@ export default function VideoGallery() {
           <p className="section-sub">
             {hasVideos
               ? 'Watch right here, or open the full channel on YouTube.'
-              : 'From tech finds to everyday chaos — pick your vibe and explore.'}
+              : 'Illustrative topic cards show the themes this concept hub is designed to organize. They are not posts by the creator.'}
           </p>
         </div>
         <a className="btn" href="https://www.instagram.com/callmeshazzam/" target="_blank" rel="noreferrer">

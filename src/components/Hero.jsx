@@ -29,14 +29,14 @@ export default function Hero() {
         <h1>
           <span className="line">SCROLL.</span>
           <span className="line outline">STOP.</span>
-          <span className="line gold">SHAZ.</span>
+          <span className="line pastel-accent">SHAZ.</span>
           <span className="hero-tagline">ZERO SUGARCOATING. ALL REAL.</span>
         </h1>
         <p>
-          No-filter tech takes, quick reactions and everyday chaos. Chai in one hand, the truth in the other. Step into CallMeShazzam’s Instagram-first creator world.
+          No-filter tech takes, quick reactions and everyday chaos. Chai in one hand, the truth in the other. Explore an unofficial creator hub connecting Instagram highlights, tech content and the wider YouTube creator world.
         </p>
         <div className="hero-actions">
-          <a className="btn btn-gold" href="https://www.instagram.com/callmeshazzam/" target="_blank" rel="noreferrer">Open Instagram ↗</a>
+          <a className="btn btn-gold" href="https://www.instagram.com/callmeshazzam/" target="_blank" rel="noreferrer">Explore Instagram ↗</a>
           <a className="btn" href="#videos">Explore the vibe ↓</a>
         </div>
       </div>

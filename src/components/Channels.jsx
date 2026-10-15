@@ -8,7 +8,7 @@ export default function Channels() {
         <div>
           <div className="kicker">03 / Two channels</div>
           <h2>ONE CREATOR.<br />TWO CHANNELS.</h2>
-          <p className="section-sub">Tech on one, everyday life on the other.</p>
+          <p className="section-sub">Explore the linked YouTube channels alongside Instagram.</p>
         </div>
       </Reveal>
 

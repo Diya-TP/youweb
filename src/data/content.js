@@ -29,7 +29,7 @@ export const subscribeUrl = (key) => `${CHANNELS[key].url}?sub_confirmation=1`
 
 export const NAV = [
   { href: '#videos', label: 'The Reels' },
-  { href: '#verdict', label: 'Pick a side' },
+  { href: '#verdict', label: 'Verdict' },
   { href: '#channels', label: 'Creator world' },
   { href: '#about', label: 'About' },
   { href: '#collab', label: 'Collab' },
@@ -44,7 +44,7 @@ export const FILTERS = ['All', 'Mobile', 'Laptop', 'Unboxing', 'Audio', 'Wearabl
 // Add verified YouTube IDs here only if you want playable YouTube videos.
 export const VIDEOS = []
 
-// Instagram-first visual topic cards. Use approved creator photos where possible.
+// Concept topic cards. These are illustrative stock photos, not posts by the creator.
 export const TOPICS = [
   { category: 'Mobile', title: 'Worth the hype?', text: 'Phone tests, camera moments and honest first impressions.', image: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=85', channel: 'tech' },
   { category: 'Mobile', title: 'Pocket camera test', text: 'Night shots, zoom and video — what matters in real life.', image: 'https://images.unsplash.com/photo-1585060544812-6b45742d762f?auto=format&fit=crop&w=900&q=85', channel: 'tech' },
@@ -94,15 +94,14 @@ export const PROFILE_IMAGE = ''
 export const ABOUT = {
   heading: 'The person behind the videos',
   paragraphs: [
-    'Shaz Mohamed, known online as CallMeShazzam, is a full-time YouTuber and tech creator based between India and the UAE.',
-    'He is known for tech product reviews, unboxings and humorous takes on technology, often in Malayalam, and shares movies, travel and lifestyle moments on a second channel.',
+    'CallMeShazzam is a creator whose online presence spans technology, entertainment and everyday-life content.',
+    'This unofficial concept hub brings together places to explore his content across Instagram and YouTube. Check the linked official profiles for current details and uploads.',
   ],
   pills: [
     'Tech reviews',
     'Unboxings',
     'Movie takes',
     'Travel',
-    'TEDx speaker',
-    'Brand collaborations',
+      'Brand collaborations',
   ],
 }

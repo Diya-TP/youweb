@@ -50,7 +50,7 @@ export default function Navbar() {
           rel="noreferrer"
           onClick={() => setOpen(false)}
         >
-          Subscribe ↗
+          YouTube ↗
         </a>
       </nav>
     </header>

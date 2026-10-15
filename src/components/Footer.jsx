@@ -7,7 +7,7 @@ export default function Footer() {
         <span className="brandmark" aria-hidden="true">S</span>
         <span className="brand-text">CALLME<small>SHAZZAM</small></span>
       </a>
-      <p>Unofficial fan-made concept website. Not affiliated with or endorsed by CallMeShazzam. © 2026</p>
+      <p>Unofficial portfolio concept website. Not affiliated with or endorsed by CallMeShazzam. © 2026</p>
       <div className="footer-links">
         {NAV.map((l) => (
           <a key={l.href} href={l.href}>{l.label}</a>

@@ -1,48 +1,99 @@
-# CallMeShazzam: Fan-made YouTube Creator Hub
+# CallMeShazzam Creator Hub — Unofficial Concept
 
-An unofficial, fan-made concept site for the YouTube channels of CallMeShazzam.
-Built with **React 18 + Vite + plain CSS + JavaScript**. Light ivory background, black and gold.
+A responsive, pastel-themed creator hub concept built with React and Vite. It connects visitors to the creator's Instagram presence and linked YouTube channels, and demonstrates UI patterns for a creator portfolio: animated hero, topic cards, a lightweight verdict quiz, channel links and a collaboration brief.
 
-## Run it
+**This is an independent concept project. It is not affiliated with, endorsed by, or operated by CallMeShazzam.** Topic-card photography is illustrative stock imagery, not content published by the creator. Audience statistics and unverified credentials are intentionally not displayed.
+
+## Live demo
+
+Add your confirmed Vercel URL here after deployment:
+
+- **Live site:** `PASTE_YOUR_VERCEL_URL_HERE`
+- **Source repository:** https://github.com/Diya-TP/youweb
+
+## Tech stack
+
+- React 18
+- Vite 5
+- JavaScript (ES modules)
+- CSS (custom design tokens, responsive layout and reduced-motion support)
+
+## Run locally
+
+Requires a current Node.js LTS release and npm.
+
 ```bash
 npm install
-npm run dev        # local dev server
-npm run build      # production build into /dist
+npm run dev
 ```
 
-## Deploy (Netlify)
-Open `dist/index.html` by double-click to preview, or drag the **`dist`** folder onto https://app.netlify.com/drop, then click "Claim this site".
-Or connect the GitHub repo: build command `npm run build`, publish directory `dist`.
+Open the local URL printed by Vite.
 
-## Edit the content
-Everything is in `src/data/content.js`:
-- `CHANNELS`: channel names, descriptions, URLs
-- `VIDEOS`: paste real YouTube video IDs to show real thumbnails and an in-page player
-- `PROFILE_IMAGE`: add a photo to `/public` and set the path (only use one you have permission for)
-- `ABOUT`, `MARQUEE`, `TOPICS`: copy
+To create and preview a production build:
 
-## Before you submit
-1. Fill `VIDEOS` with 6 real video IDs (the part after `v=` in a YouTube link).
-2. Open each channel link and confirm it is the right channel.
-3. After deploying, set `og:image` in `index.html` to the full URL (e.g. `https://your-site.netlify.app/og-image.png`).
-4. Run Lighthouse in Chrome DevTools.
-
-## Structure
-```
-src/
-  components/   Navbar, Hero, Marquee, VideoGallery, VideoModal, Channels, About, CTA, Footer, BackToTop, Reveal
-  hooks/        useReveal (scroll reveal)
-  data/         content.js
-  styles.css    design tokens + all styles
+```bash
+npm run build
+npm run preview
 ```
 
-## What's new in v2
-Intro screen with skip button, filters for Phones / Laptops / Audio / Watches / Events / Movies / Travel,
-"Verdict machine" quiz, "Work with me" section with a collab form that prepares a copy-ready brief,
-Instagram link in the footer. Set `BUSINESS_EMAIL` in `content.js` once you have a confirmed address.
+The production output is generated in `dist/`.
 
 ## Features
-Animated hero with pointer tilt, marquee, scroll reveals, filterable gallery, accessible video modal
-(Esc to close, focus restore), responsive layout, mobile menu, skip link, reduced-motion support.
 
-Unofficial fan-made concept. Not affiliated with or endorsed by CallMeShazzam.
+- Responsive layout with mobile navigation
+- Pastel color system with stronger text contrast
+- Animated hero and scroll reveal effects
+- Reduced-motion preference support
+- Topic cards that are explicitly labeled as illustrative
+- Links to Instagram and the two configured YouTube channels
+- Product-verdict quiz with generic buying tips
+- Collaboration brief form that does not invent a contact email
+- SEO description, social sharing metadata and favicon
+
+## Project structure
+
+```text
+public/             Static assets (favicon and social preview image)
+scripts/            Post-build helper
+src/
+  components/       Reusable page sections and UI
+  data/content.js   Creator links and editable page content
+  hooks/            Scroll reveal hook
+  App.jsx           Page composition
+  main.jsx          React entry point
+  styles.css        Design tokens, layout and component styles
+index.html          HTML metadata and app mount point
+```
+
+## Content maintenance
+
+- Update links in `src/data/content.js` only after confirming they point to the correct official profiles.
+- `VIDEOS` is intentionally empty until verified video IDs are supplied.
+- Use only creator images that are approved for this use. Current topic photos are illustrative stock images.
+- Do not add subscriber counts, awards, speaker credentials or contact details without reliable verification.
+- After deployment, replace the placeholder live-demo URL above and set `og:url` plus the absolute `og:image` URL in `index.html`.
+
+## Before submitting
+
+- [ ] Replace `PASTE_YOUR_VERCEL_URL_HERE` with the confirmed live URL.
+- [ ] Confirm all official profile links.
+- [ ] Add only verified video IDs or approved creator media.
+- [ ] Run `npm install` and `npm run build` from a clean checkout.
+- [ ] Test the layout at mobile, tablet and desktop widths.
+- [ ] Keyboard-test the navigation, buttons, filters and quiz.
+- [ ] Check color contrast and reduced-motion behavior.
+- [ ] Run Lighthouse and attach a genuine screenshot/report if requested.
+- [ ] Keep `node_modules/`, `.env` files and `dist/` out of Git.
+
+## Deployment
+
+The project is configured for Vercel's Vite workflow:
+
+- Build command: `npm run build`
+- Output directory: `dist`
+
+If your Vercel project uses a custom Build Command override, make sure it matches the current package build script. Commit changes to the connected GitHub branch to trigger a new deployment.
+
+## Attribution
+
+This project is a portfolio exercise and uses third-party stock photos for illustration. Replace them with approved creator-owned content if permission is obtained. Respect the respective image providers' licensing terms.
